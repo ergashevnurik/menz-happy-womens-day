@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+/* Hero Styling Goes Here */
+#hero {
+    background: url(https://nicolaferleibrown.files.wordpress.com/2015/03/mimosa-women-day-8.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hero .col {
+    padding: 16px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99;
+}
+
+#hero .col button, #hero .col input {
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-bottom: 3px solid rgb(233, 23, 23);
+    z-index: 99;
+    background: transparent;
+}
+
+#hero .col button {
+    background: rgb(233, 23, 23);
+    color: white;
+    border: 3px solid rgb(233, 23, 23);
+}
+
+#hero .col h1 {
+    color: rgb(233, 23, 23);
+    font-weight: 800;
+}
+
+#hero .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#hero .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1200px) {
+    #hero .container {
+        top: 50%;
+        left: 50%;
+    }
+}
+
+#hero .container .cover {
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+#hero .container .cover.top {
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-top: 150px solid #fa6065;
+    transform-origin: top;
+}
+
+#hero .container .cover.bottom.right {
+    border-left: 200px solid transparent;
+    border-right: 200px solid red;
+    border-bottom: 150px solid red;
+    border-top: 150px solid transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+}
+
+#hero .container .cover.left {
+    border-left: 200px solid #ff8589;
+    border-right: 200px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-top: 150px solid transparent;
+    border-bottom-left-radius: 10px;;
+    z-index: 1;
+}
+
+.envelope {
+    position: relative;
+    width: 400px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    background-color: #ff8589;
+}
+
+@media screen and (max-width: 768px) {
+    #hero .container .cover.top {
+        border-left: 175px solid transparent;
+        border-right: 176px solid transparent;
+        border-bottom: 117px solid transparent;
+        border-top: 148px solid #fa6065;
+        transform-origin: top;
+    }
+    
+    #hero .container .cover.bottom.right {
+        border-left: 200px solid transparent;
+        border-right: 151px solid red;
+        border-bottom: 243px solid red;
+        border-top: 100px solid transparent;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        z-index: 1;
+    }
+    
+    #hero .container .cover.left {
+        border-left: 200px solid #ff8589;
+        border-right: 150px solid transparent;
+        border-bottom: 244px solid transparent;
+        border-top: 99px solid transparent;
+        border-bottom-left-radius: 10px;
+        z-index: 1;
+    }
+    .envelope {
+        width: 350px;
+    }
+    .letter {
+        transform: scale(1.09)!important;
+    }
+}
+
+.letter {
+    background: #fff;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    z-index: 99;
+    font-family: 'Kalam', cursive;
+}
+
+.open {
+    transform: rotateX(180deg);
+    transition: transform 0.6s ease;
+    z-index: 1;
+}
+
+.close {
+    transform: rotate(0deg);
+    transition: transform 0.4s 0.4s ease;
+    z-index: 5;
+}
+
+.in {
+    transform: translateY(0px);
+    transition: transform 0.4s ease;
+    z-index: 3;
+}
+
+.out-partial {
+    transform: translateY(-100px);
+    transition: transfrom 0.4s 0.6s ease;
+    z-index: 3;
+}
+
+@keyframes pullLetter {
+    0% {
+        transform: translateY(-100px);
+    }
+    35% {
+        transform: translateY(-200px);
+    }
+    70% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(-300px);
+    }
+}
+
+@keyframes putLetter {
+    0% {
+        transform: translateY(-300px) scale(1);
+    }
+    25% {
+        transform: translateY(-300px) scale(1.25);
+    }
+    50% {
+        transform: translateY(-200px) scale(1.5);
+    }
+    75% {
+        transform: translateY(-100px) scale(1.75);
+    }
+    100% {
+        transform: translateY(0px) scale(2);
+    }
+    
+}
+
+.pull {
+    animation-name: pullLetter;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+.put {
+    animation-name: putLetter;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+.final {
+    z-index: 20;
+    transform: translateY(0px) scale(2);
+}
+
+.lines {
+    width: 5px;
+    height: 25px;
+    background: red;
+}
+/* Hero Styling Ends Here */
