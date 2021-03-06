@@ -5,7 +5,6 @@ var left = document.getElementById('left')
 var bottomRight = document.getElementById('bottom-right');
 var enterNameButton = document.getElementById('enter-name'); 
 var userFirstName = document.getElementById('user-firstname');
-var title = document.getElementById('title');
 var receivedUserName = document.getElementById('received-user-name');
 
 envelope.style.left = '-10000px';
@@ -14,7 +13,6 @@ enterNameButton.onclick = function() {
     envelope.style.left = '0';
     envelope.style.transition = 'all .6s ease-in-out';
     enterNameButton.style.opacity = '0';
-    title.style.opacity = '0';
     userFirstName.style.opacity = '0';
     userFirstName.readOnly = true;
     open();

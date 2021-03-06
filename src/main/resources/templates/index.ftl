@@ -10,16 +10,28 @@
         <meta charset="utf-8">
     </head>
     <body>
+        <!-- Navbar Goes Here -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="row">
+                    <a href="">MENZ</a>
+                    <div class="nav-items-container">
+                        <div class="form-group">
+                            <input type="text" placeholder="Please Enter Your Name..." name="name" id="user-firstname">
+                            <button id="enter-name">Enter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Ends Here -->
         <main>
             
             <!-- Hero Section Goes Here -->
             <section id="hero">
-                <div class="col">
-                    <h1 id="title">Please Enter Name</h1>
-                    <div class="form-group">
-                        <input type="text" placeholder="Enter Your Name..." name="name" id="user-firstname">
-                        <button id="enter-name">Enter</button>
-                    </div>
+
+                <div class="text">
+                    <h1>HAPPY WO<b>MEN'z</b> DAY DEARs</h1>
                 </div>
                 
                 <div class="container">
@@ -31,7 +43,7 @@
                         <div class="cover left" id="left">
                         </div>
                         <div class="letter" id="contact">
-                            Дорогая, <h3 id="received-user-name"></h3>поздравляю тебя с Международным женским днем! Желаю весеннего настроения, теплых отношений с родными и близкими, чистой искренней любви. Чтобы в твоей жизни получалось всё то, что ты хочешь. Внимания, заботы, трогательных моментов, душевных разговоров и встреч, приятных приобретений, развития и уверенности, реализации и востребованности, красоты, молодости, улыбок и множества всевозможных благ! Ты восхитительна! С праздником!
+                            Дорогая, <b><h3 id="received-user-name"></h3></b>поздравляю тебя с Международным женским днем! Желаю весеннего настроения, теплых отношений с родными и близкими, чистой искренней любви. Чтобы в твоей жизни получалось всё то, что ты хочешь. Внимания, заботы, трогательных моментов, душевных разговоров и встреч, приятных приобретений, развития и уверенности, реализации и востребованности, красоты, молодости, улыбок и множества всевозможных благ! Ты восхитительна! С праздником!
                         </div>
                     </div>
                 </div>

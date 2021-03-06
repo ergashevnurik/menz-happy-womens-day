@@ -2,45 +2,105 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
-/* Hero Styling Goes Here */
-#hero {
-    background: url(https://nicolaferleibrown.files.wordpress.com/2015/03/mimosa-women-day-8.jpg);
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#hero .col {
-    padding: 16px;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+/* Navbar Goes Styling Goes Here */
+.navbar {
     z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
 }
 
-#hero .col button, #hero .col input {
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.navbar .container {
+    width: 1200px;
+    margin: auto;
+}
+
+.navbar .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.navbar .container .row .nav-items-container {
+    margin-left: auto;
+}
+
+.navbar .container .row .nav-items-container button, .navbar .container .row .nav-items-container input {
     border: 0;
     outline: 0;
     padding: 10px;
-    border-bottom: 3px solid rgb(233, 23, 23);
+    border-bottom: 3px solid black;
     z-index: 99;
     background: transparent;
 }
 
-#hero .col button {
-    background: rgb(233, 23, 23);
+.navbar .container .row .nav-items-container button {
+    background: black;
     color: white;
-    border: 3px solid rgb(233, 23, 23);
+    border: 3px solid black;
 }
 
-#hero .col h1 {
-    color: rgb(233, 23, 23);
+.navbar .container .row .nav-items-container h1 {
+    color: black;
     font-weight: 800;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar .container {
+        width: 100%;
+    }
+}
+/* Navbar Goes Styling Ends Here */
+
+/* Hero Styling Goes Here */
+#hero {
+    position: relative;
+    /*background: url(https://nicolaferleibrown.files.wordpress.com/2015/03/mimosa-women-day-8.jpg);*/
+    width: 100%;
+    height: 100vh;
+    /*background-position: center;*/
+    /*background-size: contain;*/
+    /*background-repeat: no-repeat;*/
+    background: #fff;
+}
+
+#hero .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#hero .text h1 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+b {
+    color: #FF9190;
+}
+
+@media screen and (max-width: 768px) {
+    #hero .text h1 {
+        font-size: 2.5rem;
+    }
 }
 
 #hero .container {
@@ -75,14 +135,14 @@
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
     border-bottom: 150px solid transparent;
-    border-top: 150px solid #fa6065;
+    border-top: 150px solid black;
     transform-origin: top;
 }
 
 #hero .container .cover.bottom.right {
     border-left: 200px solid transparent;
-    border-right: 200px solid red;
-    border-bottom: 150px solid red;
+    border-right: 200px solid #FF9190;
+    border-bottom: 150px solid black;
     border-top: 150px solid transparent;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -90,7 +150,7 @@
 }
 
 #hero .container .cover.left {
-    border-left: 200px solid #ff8589;
+    border-left: 200px solid #FF9190;
     border-right: 200px solid transparent;
     border-bottom: 150px solid transparent;
     border-top: 150px solid transparent;
@@ -111,28 +171,28 @@
 
 @media screen and (max-width: 768px) {
     #hero .container .cover.top {
-        border-left: 175px solid transparent;
-        border-right: 176px solid transparent;
-        border-bottom: 117px solid transparent;
-        border-top: 148px solid #fa6065;
+        border-left: 176px solid transparent;
+        border-right: 175px solid transparent;
+        border-bottom: 180px solid transparent;
+        border-top: 169px solid black;
         transform-origin: top;
     }
-    
+
     #hero .container .cover.bottom.right {
-        border-left: 200px solid transparent;
-        border-right: 151px solid red;
-        border-bottom: 243px solid red;
-        border-top: 100px solid transparent;
+        border-left: 175px solid transparent;
+        border-right: 176px solid #FF9190;
+        border-bottom: 175px solid black;
+        border-top: 168px solid transparent;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         z-index: 1;
     }
-    
+
     #hero .container .cover.left {
-        border-left: 200px solid #ff8589;
-        border-right: 150px solid transparent;
-        border-bottom: 244px solid transparent;
-        border-top: 99px solid transparent;
+        border-left: 175px solid #ff8589;
+        border-right: 151px solid transparent;
+        border-bottom: 178px solid transparent;
+        border-top: 167px solid transparent;
         border-bottom-left-radius: 10px;
         z-index: 1;
     }
