@@ -5,6 +5,7 @@
 }
 
 body {
+    overflow: hidden;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
@@ -298,10 +299,16 @@ b {
     z-index: 20;
     transform: translateY(0px) scale(2);
 }
+.rose {
+    width: 20%;
+    height: 20%;
+    transform: translateX(1029px) translateY(-17px) rotate(180deg) scale(2);
+    z-index: -1;
+}
 
-.lines {
-    width: 5px;
-    height: 25px;
-    background: red;
+@media screen and (max-width: 1200px) {
+    .rose {
+        transform: translateX(350px) translateY(-17px) rotate(180deg) scale(2);
+    }
 }
 /* Hero Styling Ends Here */

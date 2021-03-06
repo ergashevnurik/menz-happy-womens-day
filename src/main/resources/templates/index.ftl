@@ -8,6 +8,8 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
+        <#--<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>-->
+
     </head>
     <body>
         <!-- Navbar Goes Here -->
@@ -47,11 +49,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div>
-                    <div class="lines">
-                        
-                    </div> 
-                </div> -->
+                <div class="lines-section" id="lines-section">
+                    <div>
+                        <img class="rose" src="https://lh3.googleusercontent.com/proxy/hfw-8Hu4Rl6u_Ode-PEruld7XhIw7GPXxruyarXvRbZqUoCxOP4U4GZfb86GN_PTyknr7kREbdpyRlft9cTacAGbpjc6sdT11GxULXi93DQWa2z7VA8ZuRkwi7rj1Yl2p5ZV" alt="">
+                    </div>
+                </div>
             </section>
             <!-- Hero Section Ends Here -->
 
@@ -60,7 +62,7 @@
 
     <!-- JS Goes Here -->
     <script src="../static/js/index.js"></script>
-    <script src="../static/js/lines.js"></script>
-    <script src="../static/js/anime.min.js"></script>
+    <#--<script src="../static/js/lines.js"></script>-->
+    <#--<script src="../static/js/anime.min.js"></script>-->
     <!-- JS Ends Here -->
 </html>
