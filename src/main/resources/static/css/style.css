@@ -101,7 +101,7 @@ body {
 }
 
 b {
-    color: #FF9190;
+    color: #9f0000;
 }
 
 @media screen and (max-width: 768px) {
@@ -148,7 +148,7 @@ b {
 
 #hero .container .cover.bottom.right {
     border-left: 200px solid transparent;
-    border-right: 200px solid #FF9190;
+    border-right: 200px solid #9f0000;
     border-bottom: 150px solid black;
     border-top: 150px solid transparent;
     border-bottom-left-radius: 10px;
@@ -157,7 +157,7 @@ b {
 }
 
 #hero .container .cover.left {
-    border-left: 200px solid #FF9190;
+    border-left: 200px solid #9f0000;
     border-right: 200px solid transparent;
     border-bottom: 150px solid transparent;
     border-top: 150px solid transparent;
@@ -173,7 +173,7 @@ b {
     margin-left: auto;
     margin-right: auto;
     top: 200px;
-    background-color: #ff8589;
+    background-color: #9f0000;
 }
 
 @media screen and (max-width: 768px) {
@@ -187,7 +187,7 @@ b {
 
     #hero .container .cover.bottom.right {
         border-left: 175px solid transparent;
-        border-right: 176px solid #FF9190;
+        border-right: 176px solid #9f0000;
         border-bottom: 175px solid black;
         border-top: 168px solid transparent;
         border-bottom-left-radius: 10px;
@@ -196,7 +196,7 @@ b {
     }
 
     #hero .container .cover.left {
-        border-left: 175px solid #ff8589;
+        border-left: 175px solid #9f0000;
         border-right: 151px solid transparent;
         border-bottom: 178px solid transparent;
         border-top: 167px solid transparent;
