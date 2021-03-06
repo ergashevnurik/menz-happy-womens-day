@@ -67,6 +67,12 @@ body {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .navbar .container .row {
+        display: block;
+    }
+}
 /* Navbar Goes Styling Ends Here */
 
 /* Hero Styling Goes Here */
