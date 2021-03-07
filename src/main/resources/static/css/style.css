@@ -32,6 +32,7 @@ body {
 }
 
 .navbar .container .row {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +70,7 @@ body {
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
     .navbar .container .row {
         display: block;
     }
@@ -302,13 +303,24 @@ b {
 .rose {
     width: 20%;
     height: 20%;
-    transform: translateX(1029px) translateY(-17px) rotate(180deg) scale(2);
     z-index: -1;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 375px) {
     .rose {
-        transform: translateX(350px) translateY(-17px) rotate(180deg) scale(2);
+        transform: translateX(225px) translateY(-17px) rotate(180deg) scale(2);
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .rose {
+        transform: translateX(300px) translateY(-17px) rotate(180deg) scale(2);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .rose {
+        transform: translateX(1029px) translateY(-17px) rotate(180deg) scale(2);
     }
 }
 /* Hero Styling Ends Here */
