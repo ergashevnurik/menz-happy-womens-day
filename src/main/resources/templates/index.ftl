@@ -51,7 +51,7 @@
                 </div>
                 <div class="lines-section" id="lines-section">
                     <div>
-                        <img class="rose" src="https://lh3.googleusercontent.com/proxy/hfw-8Hu4Rl6u_Ode-PEruld7XhIw7GPXxruyarXvRbZqUoCxOP4U4GZfb86GN_PTyknr7kREbdpyRlft9cTacAGbpjc6sdT11GxULXi93DQWa2z7VA8ZuRkwi7rj1Yl2p5ZV" alt="">
+                        <img class="rose" src="../static/img/rose.png" alt="">
                     </div>
                 </div>
             </section>
